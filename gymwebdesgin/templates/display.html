@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h4{
+            color:cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Customer Details</h3>
+
+    {% for i in object %}
+    <h4>customer name: {{i.name }}</h4>
+    <h4>customer emailid: {{i.emailid}}</h4>
+    <h4>customer contactno: {{i.contactno}}</h4>
+    <h4>customer gender: {{i.gender}}</h4>
+    {% endfor %}
+</body>
+</html>
